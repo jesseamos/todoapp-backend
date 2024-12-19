@@ -1,0 +1,27 @@
+###Signup a User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "firstName":"Jesse",
+    "lastName":"Amos",
+    "email":"test@gmail.com",
+    "password":"jesse123"
+}
+
+###Signin a user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "firstName":"Jesse",
+    "lastName":"Amos",
+    "email":"test@gmail.com",
+    "password":"jesse123"
+}
+
+###Signout User
+POST  http://localhost:3000/auth/signout
+
+### Current User
+GET http://localhost:3000/auth/currrent-user

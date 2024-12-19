@@ -1,0 +1,30 @@
+####Creating a Todo Item
+POST  http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "title":"Build a simple todo app",
+    "description":"build the simple project to pratice next js"
+}
+
+###GET ALL TODOS
+GET http://localhost:3000/todos
+
+###GET A PARTICULAR TODO WITH IT ID
+GET http://localhost:3000/todos/3
+
+###DELETE A TODO ITEM
+DELETE  http://localhost:3000/todos/4
+
+####UPDATE A TODO ITEM 
+PATCH http://localhost:3000/todos/3
+Content-Type: application/json
+
+{
+    "title":"build a simple note app",
+    "description":"build the simple project to pratice next js"
+}
+
+### GET A TODO WITH A PARTICULAR TITLE
+GET http://localhost:3000/todos/searchTerm?title=build a simple note app
+
